@@ -1,6 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./primitives/Button"
+import { Inter } from 'next/font/google'
+
+const ourFont = Inter({ subsets: ['latin'] })
+
 export const Layout = ({ children }) => {
   return (
     <>
@@ -19,7 +23,7 @@ export const Layout = ({ children }) => {
                 </Link>
             </div>
         </nav>
-        <main>
+        <main className={ourFont.className}>
             {children}
         </main>
         <footer></footer>
