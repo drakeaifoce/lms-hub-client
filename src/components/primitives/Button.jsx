@@ -5,13 +5,13 @@ export const Button = forwardRef(({children, className, onClick, variant, ... pr
   return (
     <button
         ref={ref}
-        className={clsx(
+        className={clsx( className,
             'whitespace-nowrap py-3 px-9 font-normal text-sm rounded-lg shadow-md',
             {
                 "bg-blue text-white" : variant === 'primary'
             },
             {
-              "bg-white border border-gray text-dark-gray" : variant === "tertiary"
+              "bg-white border border-light-gray text-dark-gray" : variant === "tertiary"
             }
         )}
     >
