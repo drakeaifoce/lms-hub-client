@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./primitives/Button"
-export const Layout = () => {
+export const Layout = ({ children }) => {
   return (
     <>
         <nav className="container mx-auto px-4 py-3 shadow-sm flex flex-row justify-between">
@@ -19,6 +19,10 @@ export const Layout = () => {
                 </Link>
             </div>
         </nav>
+        <main>
+            {children}
+        </main>
+        <footer></footer>
     </>
   )
 }
