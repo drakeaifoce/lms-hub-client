@@ -10,7 +10,7 @@ export default function SignIn() {
                 <h2 className="text-black font-medium text-3xl">Войти</h2>
                 <p className="text-gray text-sm font-normal">Введите данные для входа в аккаунт</p>
             </article>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-col sm:flex-row gap-5">
                 <Button variant="tertiary" className="flex flex-row gap-2 items-center">
                     <Image src={'/google-logo.svg'} alt="Google logo" width={24} height={24} />
                     <span>Войти через Google</span>
