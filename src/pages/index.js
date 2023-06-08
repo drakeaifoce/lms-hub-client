@@ -47,7 +47,7 @@ export default function Home() {
           <div className="container mx-auto pt-10 md:pt-16">
             <h2 className="text-black font-medium text-2xl md:text-3xl text-center">Популярные курсы</h2>
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 pt-8 md:pt-10">
-              <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+              <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                 <div className="p-4 flex flex-col gap-4">
                   <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                   <section className="flex flex-col items-start gap-2">
@@ -71,7 +71,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+              <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                 <div className="p-4 flex flex-col gap-4">
                   <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                   <section className="flex flex-col items-start gap-2">
@@ -95,7 +95,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+              <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                 <div className="p-4 flex flex-col gap-4">
                   <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                   <section className="flex flex-col items-start gap-2">
@@ -119,7 +119,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+              <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                 <div className="p-4 flex flex-col gap-4">
                   <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                   <section className="flex flex-col items-start gap-2">
@@ -147,9 +147,11 @@ export default function Home() {
         </section>
         <section className="bg-green-30">
             <div className="flex flex-row justify-center bg-white pt-8 pb-10 md:pt-10 md:pb-16 rounded-b-3xl">
-              <Button variant="tertiary" type="button" className="w-full md:w-fit mx-4">
-                Посмотреть все
-              </Button>
+              <Link href={'/courses'}>
+                <Button variant="tertiary" type="button" className="w-full md:w-fit mx-4">
+                  Посмотреть все
+                </Button>
+              </Link>
             </div>
             <div className="container mx-auto pt-8 md:pt-10 pb-24 md:pb-32">
               <section className="flex flex-col gap-20">

@@ -51,7 +51,7 @@ export default function AllCourses() {
                     </div>
                   </div>
                   <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5">
-                    <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+                    <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                       <div className="p-4 flex flex-col gap-4">
                         <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                         <section className="flex flex-col items-start gap-2">
@@ -74,7 +74,7 @@ export default function AllCourses() {
                         </section>
                       </div>
                     </Link>
-                    <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+                    <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                       <div className="p-4 flex flex-col gap-4">
                         <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                         <section className="flex flex-col items-start gap-2">
@@ -97,7 +97,7 @@ export default function AllCourses() {
                         </section>
                       </div>
                     </Link>
-                    <Link href={'/course/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
+                    <Link href={'/courses/1'} className="bg-white border border-black-20 mx-4 rounded-lg">
                       <div className="p-4 flex flex-col gap-4">
                         <Image width={381} height={141} className="w-full" alt="Course photo" src={'/course-card-filler.png'}/>
                         <section className="flex flex-col items-start gap-2">
