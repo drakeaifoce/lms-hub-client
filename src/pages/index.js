@@ -3,6 +3,7 @@ import { Clock } from "feather-icons-react/build/IconComponents";
 import Image from "next/image";
 import Link from "next/link"
 import { Button } from "@/components/primitives/Button";
+
 export default function Home() {
   return (
     <Layout theme={'dark'}>
