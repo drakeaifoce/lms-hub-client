@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function SignIn() {
   return (
     <Layout footerHidden={true}>
-        <section className="container mx-auto my-16 ">
+        <section className="container mx-auto my-16 w-fit">
             <div className="flex flex-col gap-8 items-center px-4">
                 <article className="flex flex-col gap-2 items-center">
                     <h2 className="text-black font-medium text-3xl">Войти</h2>
@@ -23,16 +23,16 @@ export default function SignIn() {
                     </Button>
                 </div>
                 <div className="flex flex-row gap-4 items-center">
-                    <span className="text-sm font-normal text-black-20">или</span>
+                    <span className="text-sm font-normal text-black-30">или</span>
                 </div>
-                <form className="flex flex-col gap-4">
+                <form className="flex flex-col gap-4 w-full">
                     <Input name="email" label="E-mail" type="email" placeholder="Введите e-mail"/>
                     <Input name="password" label="Пароль" type="password" placeholder="Введите пароль"/>
-                    <div class="flex flex-row items-center mb-4">
+                    <div className="flex flex-row items-center mb-4">
                         <input id="rememberMe" type="checkbox" className="w-4 h-4 text-blue-50 bg-white border border-black-20 rounded focus:ring-1"/>
                         <label for="rememberMe" className="ml-2 text-sm font-normal text-black">Запомнить меня</label>
                     </div>
-                    <Button variant="primary">Войти</Button>
+                    <Button variant="primary" type="submit">Войти</Button>
                 </form>
                 <article className="flex flex-row text-sm text-center">
                     <p className="text-black font-normal">
