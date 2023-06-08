@@ -12,7 +12,7 @@ export const Layout = ({ children, footerHidden, theme }) => {
         <div className={`${theme === 'dark' ? 'bg-black-100 text-white' : "bg-white text-black-100"}`}>
             <nav className={` container mx-auto px-4 py-3 shadow-sm flex flex-row justify-between items-center`}>
                 <div className="flex flex-row gap-5 items-center">
-                    <button className="sm:hidden">
+                    <button className="sm:hidden" type="button">
                         <Menu size={16} />
                     </button>
                     <Link href={'/'}>

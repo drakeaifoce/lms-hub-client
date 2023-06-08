@@ -147,7 +147,7 @@ export default function Home() {
         </section>
         <section className="bg-green-30">
             <div className="flex flex-row justify-center bg-white pt-8 pb-10 md:pt-10 md:pb-16 rounded-b-3xl">
-              <Button variant="tertiary">
+              <Button variant="tertiary" type="button">
                 Посмотреть все
               </Button>
             </div>

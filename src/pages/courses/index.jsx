@@ -107,13 +107,13 @@ export default function AllCourses() {
                 <div className="flex flex-col gap-3 md:flex-row md:gap-2 md:justify-end md:items-center">
                   <span className="text-black-60 font-normal text-sm">Страница 1 из 12</span>
                   <div className="flex flex-row gap-1 items-center">
-                    <Button variant="tertiary" className="flex flex-row gap-1 w-full items-center text-black-60 justify-center">
+                    <Button variant="tertiary" className="flex flex-row gap-1 w-full items-center text-black-60 justify-center" type="button">
                       <ChevronLeft size={20}/>
                       <span className="text-black-70 text-sm font-medium">
                         Предыдущая
                       </span>
                     </Button>
-                    <Button variant="tertiary" className="flex flex-row gap-1 w-full items-center text-black-60 justify-center">
+                    <Button variant="tertiary" className="flex flex-row gap-1 w-full items-center text-black-60 justify-center" type="button">
                       <span className="text-black-70 text-sm font-medium">
                         Следующая
                       </span>

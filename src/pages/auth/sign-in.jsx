@@ -13,11 +13,11 @@ export default function SignIn() {
                     <p className="text-black-60 text-sm font-normal text-center">Введите данные для входа в аккаунт</p>
                 </article>
                 <div className="flex flex-row gap-5 w-full sm:w-fit">
-                    <Button variant="tertiary" className="w-full sm:w-fit flex flex-row sm:gap-2 items-center justify-center">
+                    <Button variant="tertiary" className="w-full sm:w-fit flex flex-row sm:gap-2 items-center justify-center" type="button">
                         <Image src={'/google-logo.svg'} alt="Google logo" width={24} height={24} />
                         <span className="hidden sm:block">Войти через Google</span>
                     </Button>
-                    <Button variant="tertiary" className="w-full sm:w-fit flex flex-row sm:gap-2 items-center justify-center">
+                    <Button variant="tertiary" className="w-full sm:w-fit flex flex-row sm:gap-2 items-center justify-center" type="button">
                         <Image src={'/github-logo.svg'} alt="Google logo" width={24} height={24} />
                         <span className="hidden sm:block">Войти через GitHub</span>
                     </Button>
