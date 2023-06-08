@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 export default function SignIn() {
   return (
-    <Layout>
+    <Layout footerHidden={true}>
         <section className="container mx-auto my-16 ">
             <div className="flex flex-col gap-8 items-center px-4">
                 <article className="flex flex-col gap-2 items-center">
                     <h2 className="text-black font-medium text-3xl">Войти</h2>
-                    <p className="text-gray text-sm font-normal text-center">Введите данные для входа в аккаунт</p>
+                    <p className="text-black-60 text-sm font-normal text-center">Введите данные для входа в аккаунт</p>
                 </article>
                 <div className="flex flex-row gap-5 w-full sm:w-fit">
                     <Button variant="tertiary" className="w-full sm:w-fit flex flex-row sm:gap-2 items-center justify-center">
@@ -23,13 +23,13 @@ export default function SignIn() {
                     </Button>
                 </div>
                 <div className="flex flex-row gap-4 items-center">
-                    <span className="text-sm font-normal text-light-gray">или</span>
+                    <span className="text-sm font-normal text-black-20">или</span>
                 </div>
                 <form className="flex flex-col gap-4">
                     <Input name="email" label="E-mail" type="email" placeholder="Введите e-mail"/>
                     <Input name="password" label="Пароль" type="password" placeholder="Введите пароль"/>
                     <div class="flex flex-row items-center mb-4">
-                        <input id="rememberMe" type="checkbox" className="w-4 h-4 text-blue bg-white border border-light-gray rounded focus:ring-1"/>
+                        <input id="rememberMe" type="checkbox" className="w-4 h-4 text-blue-50 bg-white border border-black-20 rounded focus:ring-1"/>
                         <label for="rememberMe" className="ml-2 text-sm font-normal text-black">Запомнить меня</label>
                     </div>
                     <Button variant="primary">Войти</Button>
@@ -37,7 +37,7 @@ export default function SignIn() {
                 <article className="flex flex-row text-sm text-center">
                     <p className="text-black font-normal">
                         Еще нет аккаунта?{" "}
-                        <Link href={"/auth/sign-up"} className="text-blue font-medium">Зарегистрируйтесь</Link>
+                        <Link href={"/auth/sign-up"} className="text-blue-50 font-medium">Зарегистрируйтесь</Link>
                     </p>
                 </article>
             </div>
