@@ -8,7 +8,7 @@ export const Input = forwardRef(({className, name, type, placeholder, label, ...
         <label for={name} className={`text-sm font-normal text-black ${!label && 'hidden'}`}>
             {label}
         </label>
-        <input id={name} name={name} type={type} placeholder={placeholder} className="px-4 py-3 border border-solid bg-white border-light-gray rounded-lg text-sm font-normal text-"/>
+        <input id={name} name={name} type={type} placeholder={placeholder} className="px-4 py-3 border border-solid bg-white border-black-20 rounded-lg text-sm font-normal text-"/>
     </div>
   )
 }
