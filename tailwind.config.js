@@ -10,11 +10,24 @@ module.exports = {
       current: "currentColor",
       transparent: "transparent",
       white: "#FFFFFF",
-      blue : "#3069FE",
-      gray: "#666666",
-      "light-gray": "#DEDEDE",
-      "dark-gray" : "#4D4D4D",
-      black: "#1A1919"
+      blue : {
+        50: "#3069FE",
+      },
+      black: {
+        10: "#F6F6F6",
+        20: "#DEDEDE",
+        40: "#A5A5A5",
+        50: "#808080",
+        60:"#666666",
+        70:"#4D4D4D",
+        80: "#333333",
+        100: "#1A1919",
+      },
+      green: {
+        10:'#EBFAE2;',
+        30: "#B3E494",
+        70: "#4F9C20",
+      }
     },
   },
   plugins: [],
