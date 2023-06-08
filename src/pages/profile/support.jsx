@@ -1,5 +1,12 @@
+import { Layout } from "@/components/Layout";
+import { ProfileLayout } from "@/components/ProfileLayout";
+
 export default function SupportService() {
   return (
-    <div>support</div>
+    <Layout footerHidden={true}>
+    <ProfileLayout>
+      Support
+    </ProfileLayout>
+  </Layout>
   )
 }

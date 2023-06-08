@@ -1,5 +1,12 @@
+import { Layout } from "@/components/Layout";
+import { ProfileLayout } from "@/components/ProfileLayout";
+
 export default function MyCourses() {
   return (
-    <div>my-courses</div>
+    <Layout footerHidden={true}>
+      <ProfileLayout>
+        My courses
+      </ProfileLayout>
+    </Layout>
   )
 }

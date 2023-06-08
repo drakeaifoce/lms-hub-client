@@ -1,5 +1,12 @@
+import { Layout } from "@/components/Layout";
+import { ProfileLayout } from "@/components/ProfileLayout";
+
 export default function Dashboard() {
   return (
-    <div>dashboard</div>
+    <Layout footerHidden={true}>
+      <ProfileLayout>
+        Dashboard
+      </ProfileLayout>
+    </Layout>
   )
 }
