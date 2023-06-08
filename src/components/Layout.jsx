@@ -39,7 +39,7 @@ export const Layout = ({ children, footerHidden, theme }) => {
                 </div>
             </nav>
         </div>
-        <main>
+        <main className="min-h-screen">
             {children}
         </main>
         <footer className={`${footerHidden && 'hidden'} bg-black-100 o py-10 sm:py-8` + ourFont.className}>
