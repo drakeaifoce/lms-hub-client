@@ -18,16 +18,34 @@ export default function AllCourses() {
                 <section className="grid grid-cols-1 md:grid-cols-3 gap-5">
                   <div className="hidden col-span-1 md:block border border-solid border-black-20 rounded-lg">
                     <div className="m-6 flex flex-col gap-12">
-                      <section className="border-b border-solid border-black-15">
+                      <section className="border-b border-solid border-black-15 flex flex-col gap-4">
                         <h4 className="text-black-100 font-medium text-base">Профессии</h4>
+                        <section className="flex flex-col gap-2 mb-2">
+                          <div className="flex flex-row items-center mb-4">
+                            <input id="rememberMe" type="checkbox" className="w-4 h-4 text-blue-50 bg-white border border-black-20 rounded focus:ring-1"/>
+                            <label for="rememberMe" className="ml-2 text-sm font-normal text-black">Frontend разработчик</label>
+                          </div>
+                        </section>
                       </section>
-                      <section className="border-b border-solid border-black-15">
+                      <section className="border-b border-solid border-black-15 flex flex-col gap-4">
                         <h4 className="text-black-100 font-medium text-base">IT школы</h4>
+                        <section className="flex flex-col gap-2 mb-2">
+                          <div className="flex flex-row items-center mb-4">
+                            <input id="rememberMe" type="checkbox" className="w-4 h-4 text-blue-50 bg-white border border-black-20 rounded focus:ring-1"/>
+                            <label for="rememberMe" className="ml-2 text-sm font-normal text-black">nFactorial</label>
+                          </div>
+                        </section>
                       </section>
-                      <section className="border-b border-solid border-black-15">
+                      <section className="border-b border-solid border-black-15 flex flex-col gap-4">
                         <h4 className="text-black-100 font-medium text-base">Длительность</h4>
+                        <section className="flex flex-col gap-2 mb-2">
+                          <div className="flex flex-row items-center mb-4">
+                            <input id="rememberMe" type="checkbox" className="w-4 h-4 text-blue-50 bg-white border border-black-20 rounded focus:ring-1"/>
+                            <label for="rememberMe" className="ml-2 text-sm font-normal text-black">Меньше месяца</label>
+                          </div>
+                        </section>
                       </section>
-                      <section className="border-b border-solid border-black-15">
+                      <section className="flex flex-col gap-4">
                         <h4 className="text-black-100 font-medium text-base">Цена</h4>
                       </section>
                     </div>
