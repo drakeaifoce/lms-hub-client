@@ -1,9 +1,19 @@
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/primitives/Button";
 import { Input } from "@/components/primitives/Input";
 
 export default function ForgotPassword() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+
   return (
     <Layout footerHidden={true}>
       <section className="container mx-auto my-16 w-fit">
@@ -17,12 +27,24 @@ export default function ForgotPassword() {
               пароля
             </p>
           </article>
-          <form className="flex w-full flex-col gap-4">
+          <form
+            className="flex w-full flex-col gap-4"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <Input
               name="email"
               label="E-mail"
               type="email"
               placeholder="Введите e-mail"
+              {...register("email", {
+                required: "Заполните поле",
+                pattern: {
+                  value:
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                  message: "Неверный формат email",
+                },
+              })}
+              error={errors.email}
             />
             <Button variant="primary" type="submit">
               Далее
