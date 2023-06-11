@@ -53,8 +53,10 @@ export default function SignUp() {
               <span className="hidden sm:block">Войти через GitHub</span>
             </Button>
           </div>
-          <div className="flex flex-row items-center gap-4">
-            <span className="text-sm font-normal text-black-30">или</span>
+          <div className="flex w-full flex-row items-center gap-4">
+            <hr className="h-px w-full border-0 bg-black-15" />
+            <span className="w-fit text-sm font-normal text-black-30">или</span>
+            <hr className="h-px w-full border-0 bg-black-15" />
           </div>
           <form
             className="flex w-full flex-col gap-4"
