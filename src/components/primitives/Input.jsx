@@ -3,7 +3,7 @@ import Link from "next/link";
 import { forwardRef, useState } from "react";
 // we use name for input id,
 export const Input = forwardRef(
-  ({ className, name, type, placeholder, label, ...props }, ref) => {
+  ({ className, name, type, placeholder, label, error, ...props }, ref) => {
     const [isVisible, setIsVisible] = useState(false);
     return (
       <div className="relative flex flex-col gap-2">
@@ -26,9 +26,11 @@ export const Input = forwardRef(
         <input
           id={name}
           name={name}
+          ref={ref}
           type={name === "password" ? (isVisible ? "text" : "password") : type}
           placeholder={placeholder}
           className="text- rounded-lg border border-solid border-black-20 bg-white px-4 py-3 text-sm font-normal"
+          {...props}
         />
         {name === "password" && (
           <button
@@ -38,6 +40,11 @@ export const Input = forwardRef(
           >
             {isVisible ? <Eye size={14} /> : <EyeOff size={14} />}
           </button>
+        )}
+        {error && error.message && (
+          <span className="text-sm font-normal text-red-50">
+            {error.message}
+          </span>
         )}
       </div>
     );
