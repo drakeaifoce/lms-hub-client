@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/primitives/Button";
+import { Range } from "@/components/ui/Range";
 
 export default function AllCourses() {
   return (
@@ -88,6 +89,7 @@ export default function AllCourses() {
                     <h4 className="text-base font-medium text-black-100">
                       Цена
                     </h4>
+                    <Range />
                   </section>
                 </div>
               </div>
