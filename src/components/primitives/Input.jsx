@@ -29,14 +29,14 @@ export const Input = forwardRef(
           ref={ref}
           type={name === "password" ? (isVisible ? "text" : "password") : type}
           placeholder={placeholder}
-          className="text- rounded-lg border border-solid border-black-20 bg-white px-4 py-3 text-sm font-normal"
+          className="rounded-lg border border-solid border-black-20 bg-white px-4 py-3 text-sm font-normal"
           {...props}
         />
         {name === "password" && (
           <button
             type="button"
             onClick={() => setIsVisible(!isVisible)}
-            className="absolute inset-y-0 right-0 top-7 flex items-center px-4 text-black-60"
+            className="absolute right-2.5 flex h-full items-center text-black-60"
           >
             {isVisible ? <Eye size={14} /> : <EyeOff size={14} />}
           </button>
