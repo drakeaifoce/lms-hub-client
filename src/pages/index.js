@@ -13,8 +13,8 @@ export default function Home() {
           <h1 className="px-4 text-4xl font-semibold text-white md:text-center md:text-6xl">
             Astana Hub Education
           </h1>
-          <div className="flex flex-col justify-between gap-8 px-4 pb-8 pt-6 md:flex-row md:px-20">
-            <div className="flex flex-col gap-10 md:w-2/3 md:flex-row md:items-end">
+          <div className="flex flex-col items-end gap-8 pb-8 pt-6 md:flex-row md:items-end md:justify-between">
+            <div className="flex flex-col items-start gap-10 md:w-2/3 md:flex-row md:items-start">
               <p className="text-base font-medium text-black-10 md:w-1/2">
                 Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -116,8 +116,8 @@ export default function Home() {
                       <h3 className="text-black text-sm font-medium">
                         StartUp School
                       </h3>
-                      <span className="rounded-md bg-green-10 px-1 py-1 text-xs font-normal text-green-70">
-                        идет набор
+                      <span className="rounded-md bg-black-10 px-1 py-1 text-xs font-normal text-black-70">
+                        скоро
                       </span>
                     </div>
                     <p className="w-full text-sm font-normal text-black-60 md:w-3/4">
@@ -154,8 +154,8 @@ export default function Home() {
                       <h3 className="text-black text-sm font-medium">
                         StartUp School
                       </h3>
-                      <span className="rounded-md bg-green-10 px-1 py-1 text-xs font-normal text-green-70">
-                        идет набор
+                      <span className="rounded-md bg-red-10 px-1 py-1 text-xs font-normal text-red-50">
+                        набор закрыт
                       </span>
                     </div>
                     <p className="w-full text-sm font-normal text-black-60 md:w-3/4">
