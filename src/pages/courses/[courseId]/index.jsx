@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/primitives/Button";
+import { Accordion } from "@/components/ui/Accordion";
 
 export default function Course() {
   return (
@@ -82,7 +83,7 @@ export default function Course() {
                 |
               </span>
               <div className="flex">
-                <span className="rounded-md bg-green-10 px-1 py-1 text-xs font-normal text-green-70 ">
+                <span className="rounded-md bg-green-10 px-1 py-1 text-center text-xs font-normal text-green-70">
                   идет набор
                 </span>
               </div>
@@ -147,6 +148,7 @@ export default function Course() {
               <h2 className="text-left text-2xl font-medium text-black-100 md:text-center md:text-3xl">
                 Чему вы научитесь?
               </h2>
+              <Accordion />
             </section>
           </div>
         </div>
