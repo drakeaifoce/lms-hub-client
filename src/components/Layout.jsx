@@ -35,13 +35,28 @@ export const Layout = ({ children, footerHidden, theme }) => {
             </Link>
           </div>
           <div className="hidden sm:flex sm:flex-row sm:gap-10">
-            <Link href="/" className="text-base font-medium">
+            <Link
+              href="/"
+              className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
+                theme === "dark" ? "hover:text-black-50" : "hover:text-black-20"
+              }`}
+            >
               Главная
             </Link>
-            <Link href="/courses" className="text-base font-medium">
+            <Link
+              href="/courses"
+              className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
+                theme === "dark" ? "hover:text-black-50" : "hover:text-black-20"
+              }`}
+            >
               Курсы
             </Link>
-            <Link href="/contacts" className="text-base font-medium">
+            <Link
+              href="/contacts"
+              className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
+                theme === "dark" ? "hover:text-black-50" : "hover:text-black-20"
+              }`}
+            >
               Контакты
             </Link>
           </div>
