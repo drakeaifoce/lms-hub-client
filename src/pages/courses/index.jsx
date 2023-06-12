@@ -18,9 +18,12 @@ export default function AllCourses() {
             Курсы
           </h1>
           <div className="flex flex-col gap-6 md:gap-7">
-            <nav className="flex flex-row items-center justify-between">
+            <nav className="flex flex-col gap-6 md:flex-row md:justify-between md:gap-0">
               <div>Tabs</div>
-              <div className="md:hidden">Filters mobile</div>
+              <div className="flex max-w-screen-md flex-row justify-between">
+                <div>Sorting</div>
+                <div className="md:hidden">Filters mobile</div>
+              </div>
             </nav>
             <section className="grid grid-cols-1 gap-5 md:grid-cols-3">
               <div className="col-span-1 hidden rounded-lg border border-solid border-black-20 md:block">
@@ -29,8 +32,21 @@ export default function AllCourses() {
                     <h4 className="text-base font-medium text-black-100">
                       Профессии
                     </h4>
-                    <section className="mb-2 flex flex-col gap-2">
-                      <div className="mb-4 flex flex-row items-center">
+                    <section className="mb-2 flex flex-col gap-2 pb-4">
+                      <div className="flex flex-row items-center">
+                        <input
+                          id="profesion"
+                          type="checkbox"
+                          className="h-4 w-4 rounded border border-black-20 bg-white text-blue-50 focus:ring-1"
+                        />
+                        <label
+                          htmlFor="profesion"
+                          className="text-black ml-2 text-sm font-normal"
+                        >
+                          Frontend разработчик
+                        </label>
+                      </div>
+                      <div className="flex flex-row items-center">
                         <input
                           id="profesion"
                           type="checkbox"
@@ -49,8 +65,8 @@ export default function AllCourses() {
                     <h4 className="text-base font-medium text-black-100">
                       IT школы
                     </h4>
-                    <section className="mb-2 flex flex-col gap-2">
-                      <div className="mb-4 flex flex-row items-center">
+                    <section className="flex flex-col gap-2 pb-4">
+                      <div className="flex flex-row items-center">
                         <input
                           id="school"
                           type="checkbox"
@@ -69,8 +85,8 @@ export default function AllCourses() {
                     <h4 className="text-base font-medium text-black-100">
                       Длительность
                     </h4>
-                    <section className="mb-2 flex flex-col gap-2">
-                      <div className="mb-4 flex flex-row items-center">
+                    <section className="flex flex-col gap-2 pb-4">
+                      <div className="flex flex-row items-center">
                         <input
                           id="Length"
                           type="checkbox"
