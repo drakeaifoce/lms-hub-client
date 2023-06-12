@@ -12,7 +12,7 @@ import { Range } from "@/components/ui/Range";
 export default function AllCourses() {
   return (
     <Layout>
-      <div className="md:mt-15 container mx-auto my-10 md:mb-14">
+      <div className="md:mt-15 container mx-auto py-10 md:mb-14">
         <div className="flex flex-col gap-10 px-4 md:gap-8">
           <h1 className="text-center text-2xl font-medium text-black-100 md:text-3xl">
             Курсы
@@ -32,12 +32,12 @@ export default function AllCourses() {
                     <section className="mb-2 flex flex-col gap-2">
                       <div className="mb-4 flex flex-row items-center">
                         <input
-                          id="rememberMe"
+                          id="profesion"
                           type="checkbox"
                           className="h-4 w-4 rounded border border-black-20 bg-white text-blue-50 focus:ring-1"
                         />
                         <label
-                          htmlFor="rememberMe"
+                          htmlFor="profesion"
                           className="text-black ml-2 text-sm font-normal"
                         >
                           Frontend разработчик
@@ -52,12 +52,12 @@ export default function AllCourses() {
                     <section className="mb-2 flex flex-col gap-2">
                       <div className="mb-4 flex flex-row items-center">
                         <input
-                          id="rememberMe"
+                          id="school"
                           type="checkbox"
                           className="h-4 w-4 rounded border border-black-20 bg-white text-blue-50 focus:ring-1"
                         />
                         <label
-                          htmlFor="rememberMe"
+                          htmlFor="school"
                           className="text-black ml-2 text-sm font-normal"
                         >
                           nFactorial
@@ -72,12 +72,12 @@ export default function AllCourses() {
                     <section className="mb-2 flex flex-col gap-2">
                       <div className="mb-4 flex flex-row items-center">
                         <input
-                          id="rememberMe"
+                          id="Length"
                           type="checkbox"
                           className="h-4 w-4 rounded border border-black-20 bg-white text-blue-50 focus:ring-1"
                         />
                         <label
-                          htmlFor="rememberMe"
+                          htmlFor="Length"
                           className="text-black ml-2 text-sm font-normal"
                         >
                           Меньше месяца
