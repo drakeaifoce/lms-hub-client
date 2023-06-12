@@ -20,7 +20,7 @@ export const Layout = ({ children, footerHidden, theme }) => {
           className={` container mx-auto flex flex-row items-center justify-between px-4 py-3 shadow-sm`}
         >
           <div className="flex flex-row items-center gap-5">
-            <button className="sm:hidden" type="button">
+            <button className="md:hidden" type="button">
               <Menu size={16} />
             </button>
             <Link href="/">
@@ -34,7 +34,7 @@ export const Layout = ({ children, footerHidden, theme }) => {
               />
             </Link>
           </div>
-          <div className="hidden sm:flex sm:flex-row sm:gap-10">
+          <div className="hidden md:flex md:flex-row md:gap-10">
             <Link
               href="/"
               className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${

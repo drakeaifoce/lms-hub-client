@@ -11,7 +11,7 @@ export default function Home() {
     <Layout theme="dark">
       <div className="bg-black-100">
         <section className="container mx-auto flex flex-col gap-6 px-4 pb-8 pt-10 md:gap-8 md:pb-36 md:pt-40">
-          <h1 className="px-4 text-4xl font-semibold text-white md:text-center md:text-6xl">
+          <h1 className="text-left text-4xl font-semibold text-white md:text-center md:text-6xl">
             Astana Hub Education
           </h1>
           <div className="flex flex-col items-end gap-8 pb-8 pt-6 md:flex-row md:items-end md:justify-between">
