@@ -9,15 +9,16 @@ export const Button = forwardRef(
         type={type}
         className={clsx(
           className,
-          "whitespace-nowrap rounded-lg px-4 py-3 text-sm font-normal shadow-md md:px-9",
+          "whitespace-nowrap rounded-lg px-4 py-3 text-sm font-normal shadow-md transition hover:transition-colors md:px-9",
           {
             "bg-blue-50 text-white": variant === "primary",
           },
           {
-            "border border-black-20 bg-white text-black-70":
+            "border border-black-20 bg-white text-black-70 hover:bg-black-20 hover:text-black-100 ":
               variant === "tertiary",
           },
         )}
+        {...props}
       >
         {children}
       </button>
