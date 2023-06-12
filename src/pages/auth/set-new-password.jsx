@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import { Layout } from "@/components/Layout";
-import { Button } from "@/components/primitives/Button";
-import { Input } from "@/components/primitives/Input";
+import { Layout } from "../../components/Layout";
+import { Button } from "../../components/primitives/Button";
+import { Input } from "../../components/primitives/Input";
 
 export default function SetNewPassword() {
   const {

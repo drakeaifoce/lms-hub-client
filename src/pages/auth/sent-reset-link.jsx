@@ -1,7 +1,7 @@
 import { Check } from "feather-icons-react/build/IconComponents";
 import Link from "next/link";
-import { Layout } from "@/components/Layout";
-import { Button } from "@/components/primitives/Button";
+import { Layout } from "../../components/Layout";
+import { Button } from "../../components/primitives/Button";
 
 export default function SentResetLink() {
   return (

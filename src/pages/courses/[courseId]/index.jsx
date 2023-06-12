@@ -5,9 +5,9 @@ import {
 } from "feather-icons-react/build/IconComponents";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout } from "@/components/Layout";
-import { Button } from "@/components/primitives/Button";
-import { Accordion } from "@/components/ui/Accordion";
+import { Layout } from "../../../components/Layout";
+import { Button } from "../../../components/primitives/Button";
+import { Accordion } from "../../../components/ui/Accordion";
 
 export default function Course() {
   return (

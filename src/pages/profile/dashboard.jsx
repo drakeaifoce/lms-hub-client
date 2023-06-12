@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Layout } from "@/components/Layout";
-import { ProfileLayout } from "@/components/ProfileLayout";
+import { Layout } from "../../components/Layout";
+import { ProfileLayout } from "../../components/ProfileLayout";
 
 export default function Dashboard() {
   return (

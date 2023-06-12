@@ -16,12 +16,12 @@ export const Button = forwardRef(
           {
             "border border-black-20 bg-white text-black-70 hover:bg-black-20 hover:text-black-100 ":
               variant === "tertiary",
-          },
+          }
         )}
         {...props}
       >
         {children}
       </button>
     );
-  },
+  }
 );

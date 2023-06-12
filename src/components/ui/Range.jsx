@@ -24,7 +24,7 @@ export const Range = ({ props }) => {
       <SliderPrimitive.Thumb
         className={clsx(
           "block h-5 w-5 rounded-full bg-blue-50",
-          "focus:outline-none focus-visible:ring focus-visible:ring-blue-50 focus-visible:ring-opacity-75",
+          "focus:outline-none focus-visible:ring focus-visible:ring-blue-50 focus-visible:ring-opacity-75"
         )}
       >
         <div className="flex flex-row items-center justify-center">
@@ -36,7 +36,7 @@ export const Range = ({ props }) => {
       <SliderPrimitive.Thumb
         className={clsx(
           "block h-5 w-5 rounded-full bg-blue-50",
-          "focus:outline-none focus-visible:ring focus-visible:ring-blue-50 focus-visible:ring-opacity-75",
+          "focus:outline-none focus-visible:ring focus-visible:ring-blue-50 focus-visible:ring-opacity-75"
         )}
       >
         <div className="flex flex-row items-center justify-center">

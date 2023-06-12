@@ -1,9 +1,9 @@
 import { Clock } from "feather-icons-react/build/IconComponents";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout } from "@/components/Layout";
-import { Button } from "@/components/primitives/Button";
-import { priceFormat } from "@/utils/priceFormatter";
+import { Layout } from "../components/Layout";
+import { Button } from "../components/primitives/Button";
+import { priceFormat } from "../utils/priceFormatter";
 
 export default function Home() {
   return (
