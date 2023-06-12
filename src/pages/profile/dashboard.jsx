@@ -6,14 +6,14 @@ export default function Dashboard() {
   return (
     <Layout footerHidden={true}>
       <ProfileLayout>
-        <div className="flex flex-col">
+        <div className="flex min-h-full flex-col">
           <article className="flex flex-col gap-2">
             <h1 className="text-2xl font-medium text-black-100">Dashboard</h1>
             <p className="text-sm font-normal text-black-60">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </article>
-          <article className="mx-auto flex h-screen flex-col items-center gap-8">
+          <article className="mx-auto my-44 flex min-h-full flex-col items-center gap-8">
             <Image
               width={290}
               height={216}
