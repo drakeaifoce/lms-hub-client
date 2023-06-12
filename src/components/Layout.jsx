@@ -2,6 +2,7 @@ import { Mail, Menu } from "feather-icons-react/build/IconComponents";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { navbarLinks } from "@/consts/navbar-links";
 import { Button } from "./primitives/Button";
 
 const ourFont = Inter({ subsets: ["latin"] });
@@ -35,30 +36,21 @@ export const Layout = ({ children, footerHidden, theme }) => {
             </Link>
           </div>
           <div className="hidden md:flex md:flex-row md:gap-10">
-            <Link
-              href="/"
-              className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
-                theme === "dark" ? "hover:text-black-50" : "hover:text-black-20"
-              }`}
-            >
-              Главная
-            </Link>
-            <Link
-              href="/courses"
-              className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
-                theme === "dark" ? "hover:text-black-50" : "hover:text-black-20"
-              }`}
-            >
-              Курсы
-            </Link>
-            <Link
-              href="/contacts"
-              className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
-                theme === "dark" ? "hover:text-black-50" : "hover:text-black-20"
-              }`}
-            >
-              Контакты
-            </Link>
+            {navbarLinks.map((link) => {
+              return (
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  className={`text-base font-medium transition hover:transition-colors focus:text-blue-50 focus:transition-colors ${
+                    theme === "dark"
+                      ? "hover:text-black-50"
+                      : "hover:text-black-20"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
           <div className="flex flex-row gap-3">
             <Link href="/auth/sign-in">
