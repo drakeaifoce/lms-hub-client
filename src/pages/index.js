@@ -232,7 +232,7 @@ export default function Home() {
               <h2 className="text-center text-2xl font-medium text-white md:text-3xl">
                 Наши партнеры
               </h2>
-              <div className="grid grid-cols-2 items-center gap-y-24 md:grid-cols-3">
+              <div className="grid grid-cols-2 items-center gap-y-24 md:grid-cols-3 md:divide-x md:divide-white">
                 <div className="flex w-full flex-row justify-center">
                   <Image
                     src="/samsung-logo.png"
