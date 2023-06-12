@@ -1,5 +1,5 @@
-import NextFontLocal from "next/font/local";
 import "../tailwind.css";
+import NextFontLocal from "next/font/local";
 
 const fixel = NextFontLocal({
   src: "../fonts/fixel-variable.ttf",

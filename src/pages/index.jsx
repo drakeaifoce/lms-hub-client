@@ -1,10 +1,13 @@
 import { Clock } from "feather-icons-react/build/IconComponents";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout } from "@/components/Layout";
-import { Button } from "@/components/primitives/Button";
-import { featuresBadges } from "@/consts/landing-features-badges";
-import { priceFormat } from "@/utils/priceFormatter";
+import { Layout } from "../components/Layout";
+import { Button } from "../components/primitives/Button";
+import { featuresBadges } from "../consts/landing-features-badges";
+
+export function formatPrice(price) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 
 export default function Home() {
   return (
