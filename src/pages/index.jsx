@@ -3,7 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "../components/Layout";
 import { Button } from "../components/primitives/Button";
-import { priceFormat } from "../utils/priceFormatter";
+
+export function formatPrice(price) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 
 export default function Home() {
   return (
@@ -93,7 +96,7 @@ export default function Home() {
                       <span>3 недели</span>
                     </div>
                     <span className="text-base font-medium text-black-100">
-                      {priceFormat(45000)} ₸
+                      {formatPrice(45000)} ₸
                     </span>
                   </section>
                 </div>

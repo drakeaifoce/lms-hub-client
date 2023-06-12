@@ -1,14 +1,11 @@
 import { Mail, Menu } from "feather-icons-react/build/IconComponents";
-import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./primitives/Button";
 
-const ourFont = Inter({ subsets: ["latin"] });
-
 export const Layout = ({ children, footerHidden, theme }) => {
   return (
-    <div className={ourFont.className}>
+    <div>
       <div
         className={`${
           theme === "dark"
@@ -71,10 +68,7 @@ export const Layout = ({ children, footerHidden, theme }) => {
       </div>
       <main className="min-h-screen">{children}</main>
       <footer
-        className={
-          `${footerHidden && "hidden"} o bg-black-100 py-10 sm:py-8` +
-          ourFont.className
-        }
+        className={`${footerHidden && "hidden"} bg-black-100 py-10 sm:py-8`}
       >
         <div className="container mx-auto flex flex-col gap-8 px-4 text-black-50 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-row items-center gap-2.5">
