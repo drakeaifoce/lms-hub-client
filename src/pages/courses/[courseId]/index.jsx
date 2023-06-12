@@ -126,11 +126,14 @@ export default function Course() {
                 interdum tellus elit sed risus.
               </p>
             </section>
-            <Image
-              src="/video-filler.png"
-              width={846}
-              height={480}
-              alt="Introduction to course video"
+            <iframe
+              width="846"
+              height="480"
+              src="https://www.youtube.com/embed/NiknNI_0J48"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             />
           </div>
         </div>

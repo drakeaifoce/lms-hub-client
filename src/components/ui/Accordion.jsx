@@ -64,55 +64,61 @@ const items = [
   },
 ];
 
-export const Accordion = () => {
+export const Accordion = ({ props }) => {
   return (
-    <AccordionPrimitive.Root type="single" className={clsx("w-full space-y-4")}>
-      {items.map((item, i) => (
-        <AccordionPrimitive.Item
-          key={item.id}
-          value={item.id}
-          className="w-full focus:outline-none"
-        >
-          <AccordionPrimitive.Header className="w-full">
-            <AccordionPrimitive.Trigger
-              className={clsx(
-                "group",
-                "focus:outline-none",
-                "inline-flex w-full flex-row items-start justify-between bg-white px-4 py-2 text-left md:items-center",
-              )}
-            >
-              <span className="w-2/3 text-base font-medium text-black-80 md:w-fit md:text-xl">
-                {i + 1 + ". " + item.header}
-              </span>
-              <div className="hidden md:flex md:flex-row">
-                <div className="flex flex-row items-center divide-x divide-black-20 text-black-60">
-                  <div className="flex flex-row items-center gap-1 px-4">
-                    <Youtube size={16} />
-                    <span>{item.lessonsAmount + " уроков"}</span>
-                  </div>
-                  <div className="flex flex-row items-center gap-1 px-4">
-                    <Clock size={16} />
-                    <span>{item.length}</span>
-                  </div>
-                </div>
-              </div>
-              <span className="flex w-1/3 flex-row items-center justify-end md:w-fit">
+    <AccordionPrimitive.Root type="single" className="w-full">
+      {items.map((item, i) => {
+        return (
+          <AccordionPrimitive.AccordionItem
+            key={item.id}
+            value={item}
+            className="px-2 py-3 md:p-6"
+          >
+            <AccordionPrimitive.AccordionTrigger className="flex w-full flex-col items-start justify-between gap-4 md:flex-row md:items-center md:gap-0">
+              <div className="flex w-full flex-row items-center justify-between md:w-fit">
+                <h5 className="text-base font-medium text-black-80 md:text-xl">
+                  {i + 1 + " " + item.header}
+                </h5>
                 <ChevronDown
-                  className={clsx(
-                    "shrink-0 text-black-100 ease-in-out",
-                    "group-radix-state-open:rotate-180 group-radix-state-open:duration-300",
-                  )}
+                  size={16}
+                  className="inline-block md:hidden md:text-black-100 "
                 />
-              </span>
-            </AccordionPrimitive.Trigger>
-          </AccordionPrimitive.Header>
-          <AccordionPrimitive.Content className="dark:bg-gray-800 w-full rounded-b-lg bg-white px-4 pb-3 pt-1">
-            <div className="text-gray-700 dark:text-gray-400 text-sm">
-              {item.lessonsAmount}
-            </div>
-          </AccordionPrimitive.Content>
-        </AccordionPrimitive.Item>
-      ))}
+              </div>
+              <div className="flex flex-row items-center gap-7">
+                <section className="flex flex-row items-center divide-x divide-black-20 text-sm font-normal text-black-60">
+                  <div className="flex flex-row items-center gap-2 px-4">
+                    <Youtube size={16} />
+                    <p className="text-left">
+                      {item.lessonsAmount + " уроков"}
+                    </p>
+                  </div>
+                  <div className="flex flex-row items-center gap-2 px-4">
+                    <Clock size={16} />
+                    <p className="text-left">{item.length}</p>
+                  </div>
+                </section>
+                <ChevronDown
+                  size={16}
+                  className="hidden md:inline-block md:text-black-100"
+                />
+              </div>
+            </AccordionPrimitive.AccordionTrigger>
+            <AccordionPrimitive.AccordionContent className="mt-5 border-t border-solid border-black-15 px-8 py-4 md:py-5">
+              <ul className="flex flex-col gap-4 text-sm font-normal text-black-80">
+                {item.lessons.map((lesson) => {
+                  return (
+                    <li key={lesson.id}>
+                      <artcile>
+                        {lesson.title + ": " + lesson.description}
+                      </artcile>
+                    </li>
+                  );
+                })}
+              </ul>
+            </AccordionPrimitive.AccordionContent>
+          </AccordionPrimitive.AccordionItem>
+        );
+      })}
     </AccordionPrimitive.Root>
   );
 };
