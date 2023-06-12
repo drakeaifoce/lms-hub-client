@@ -81,7 +81,7 @@ export default function Home() {
                       <span>3 недели</span>
                     </div>
                     <span className="text-base font-medium text-black-100">
-                      {priceFormat(45000)} ₸
+                      {formatPrice(45000)} ₸
                     </span>
                   </section>
                 </div>

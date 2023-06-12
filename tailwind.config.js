@@ -1,10 +1,8 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,jsx}"],
   theme: {
     colors: {
       current: "currentColor",
@@ -37,6 +35,9 @@ module.exports = {
         10: "#FDF2F2",
         50: "#EC5962",
       },
+    },
+    fontFamily: {
+      sans: ["var(--font-fixel)", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
