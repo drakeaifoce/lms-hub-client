@@ -1,15 +1,14 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import { LogOut } from "feather-icons-react/build/IconComponents";
-import Link from "next/link";
-import { useRouter } from "next/router";
-
 import {
   BookOpen,
   Calendar,
+  LogOut,
   Mail,
   PieChart,
   User,
 } from "feather-icons-react/build/IconComponents";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const profileNavigationLinks = [
   {

@@ -1,7 +1,7 @@
 import { Mail, Menu } from "feather-icons-react/build/IconComponents";
 import Image from "next/image";
 import Link from "next/link";
-import { navbarLinks } from "@/consts/navbar-links";
+import { navbarLinks } from "../consts/navbar-links";
 import { Button } from "./primitives/Button";
 
 export const Layout = ({ children, footerHidden, theme }) => {
