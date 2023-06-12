@@ -20,19 +20,19 @@ export default function Home() {
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </p>
               <div className="flex flex-row flex-wrap gap-x-2 gap-y-4 md:order-first md:w-1/2">
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white">
+                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
                   Стартапы
                 </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white">
+                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
                   Программирование
                 </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white">
+                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
                   Курсы
                 </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white">
+                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
                   Цифровизация
                 </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white">
+                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
                   Хакатоны
                 </span>
               </div>
@@ -47,9 +47,9 @@ export default function Home() {
             </Link> */}
             <Link
               href="/courses"
-              className="flex h-52 w-52 shrink-0 flex-row items-center justify-center rounded-full border border-dashed border-black-70"
+              className="flex h-52 w-52 shrink-0 flex-row items-center justify-center rounded-full border border-dashed border-black-70 text-white transition hover:bg-white hover:text-black-100 hover:transition-colors"
             >
-              <span className="rotate-[30deg] text-sm font-medium text-white">
+              <span className="rotate-[30deg] text-sm font-medium">
                 Посмотреть курсы
               </span>
             </Link>
