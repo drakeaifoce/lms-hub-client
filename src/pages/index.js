@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/primitives/Button";
+import { featuresBadges } from "@/consts/landing-features-badges";
 import { priceFormat } from "@/utils/priceFormatter";
 
 export default function Home() {
@@ -20,31 +21,18 @@ export default function Home() {
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </p>
               <div className="flex flex-row flex-wrap gap-x-2 gap-y-4 md:order-first md:w-1/2">
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
-                  Стартапы
-                </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
-                  Программирование
-                </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
-                  Курсы
-                </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
-                  Цифровизация
-                </span>
-                <span className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors">
-                  Хакатоны
-                </span>
+                {featuresBadges.map((badge) => {
+                  return (
+                    <span
+                      key={badge.id}
+                      className="rounded-3xl border border-solid border-black-70 px-4 py-2 text-base font-normal text-white transition hover:bg-white hover:text-black-100 hover:transition-colors"
+                    >
+                      {badge.name}
+                    </span>
+                  );
+                })}
               </div>
             </div>
-            {/* <Link href={'/courses'} className="flex flex-row justify-end">
-              <Image 
-                src={'/watch-courses-button.svg'}
-                width={200}
-                height={200}
-                alt="Watch courses"
-              />
-            </Link> */}
             <Link
               href="/courses"
               className="flex h-52 w-52 shrink-0 flex-row items-center justify-center rounded-full border border-dashed border-black-70 text-white transition hover:bg-white hover:text-black-100 hover:transition-colors"
