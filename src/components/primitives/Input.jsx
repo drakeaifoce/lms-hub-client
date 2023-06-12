@@ -48,5 +48,5 @@ export const Input = forwardRef(
         )}
       </div>
     );
-  }
+  },
 );
