@@ -36,7 +36,7 @@ export const Input = forwardRef(
           <button
             type="button"
             onClick={() => setIsVisible(!isVisible)}
-            className="absolute right-2.5 flex h-full items-center text-black-60"
+            className="absolute bottom-4 right-2.5 items-center text-black-60"
           >
             {isVisible ? <Eye size={14} /> : <EyeOff size={14} />}
           </button>
