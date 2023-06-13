@@ -48,6 +48,12 @@ export default function MyProfile() {
                 <Input name="email" label="E-mail" type="text" />
                 <Input name="phone" label="Телефон" type="text" />
               </div>
+              <div className="flex w-full flex-row items-center gap-4">
+                DatePicker and Select
+              </div>
+              <div className="flex w-full flex-row items-center">
+                Full width select
+              </div>
             </section>
             <Button variant="primary" className="w-fit">
               Сохранить
