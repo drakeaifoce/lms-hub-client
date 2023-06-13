@@ -6,7 +6,7 @@ export const Input = forwardRef(
   ({ className, name, type, placeholder, label, error, ...props }, ref) => {
     const [isVisible, setIsVisible] = useState(false);
     return (
-      <div className="relative flex flex-col gap-2">
+      <div className="relative flex w-full flex-col gap-2">
         <label
           htmlFor={name}
           className={`text-black text-sm font-normal ${!label && "hidden"} ${
@@ -29,7 +29,7 @@ export const Input = forwardRef(
           ref={ref}
           type={name === "password" ? (isVisible ? "text" : "password") : type}
           placeholder={placeholder}
-          className="rounded-lg border border-solid border-black-20 bg-white px-4 py-3 text-sm font-normal"
+          className="w-full rounded-lg border border-solid border-black-20 bg-white px-4 py-3 text-sm font-normal"
           {...props}
         />
         {name === "password" && (
