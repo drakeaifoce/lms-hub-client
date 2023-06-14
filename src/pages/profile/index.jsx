@@ -3,6 +3,18 @@ import { Layout } from "../../components/Layout";
 import { Button } from "../../components/primitives/Button";
 import { Input } from "../../components/primitives/Input";
 import { ProfileLayout } from "../../components/ProfileLayout";
+import { Select } from "../../components/ui/Select";
+
+const genders = [
+  {
+    id: 1,
+    value: "Мужской",
+  },
+  {
+    id: 2,
+    value: "Женский",
+  },
+]
 
 export default function MyProfile() {
   return (
@@ -49,7 +61,7 @@ export default function MyProfile() {
                 <Input name="phone" label="Телефон" type="text" />
               </div>
               <div className="flex w-full flex-row items-center gap-4">
-                DatePicker and Select
+                <Input name="date" label='Дата рождения' type="date" />
               </div>
               <div className="flex w-full flex-row items-center">
                 Full width select
