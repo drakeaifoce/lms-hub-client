@@ -9,7 +9,7 @@ export const Input = forwardRef(
       <div className="relative flex w-full flex-col gap-2">
         <label
           htmlFor={name}
-          className={`text-black text-sm font-normal ${!label && "hidden"} ${
+          className={`text-black-100 text-sm font-normal ${!label && "hidden"} ${
             name === "password" && "flex flex-row items-center justify-between"
           }`}
         >
