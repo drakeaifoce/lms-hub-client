@@ -14,7 +14,7 @@ export default function SupportService() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </article>
-          <form className="flex flex-col gap-6">
+          <form className="flex flex-col gap-6 w-full md:w-1/2">
             <TextArea name="message" placeholder={"Ваше обращение"}/>
             <Button variant="primary" className="flex flex-row justify-center items-center gap-2 w-full sm:w-fit font-medium" type="submit">
               <Send size={14}/>
